@@ -1,5 +1,5 @@
 package org.entity;
 
-public class User {
+public class seller {
 
 }
