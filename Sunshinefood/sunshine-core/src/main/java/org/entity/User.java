@@ -1,9 +1,5 @@
 package org.entity;
 
 public class User {
-	private String name;
-	private int id;
-	private int a;
-	private String b;
-	private String bbbbb;
+
 }
