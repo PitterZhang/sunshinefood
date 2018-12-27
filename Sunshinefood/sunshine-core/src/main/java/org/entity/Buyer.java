@@ -51,6 +51,14 @@ public class Buyer {
 		this.buyerEmail = buyerEmail;
 	}
 
+	@Override
+	public String toString() {
+		return "Buyer [buyerId=" + buyerId + ", buyerName=" + buyerName + ", buyerPassword=" + buyerPassword
+				+ ", buyerPhone=" + buyerPhone + ", buyerEmail=" + buyerEmail + "]";
+	}
+
+
+
 
 	
 }

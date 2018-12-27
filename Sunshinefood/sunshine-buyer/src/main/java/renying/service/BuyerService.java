@@ -3,5 +3,5 @@ package renying.service;
 import org.entity.Buyer;
 
 public interface BuyerService {
-	Buyer login(Buyer buyer);
+	Buyer login(String buyerName,String buyerPassword);
 }
