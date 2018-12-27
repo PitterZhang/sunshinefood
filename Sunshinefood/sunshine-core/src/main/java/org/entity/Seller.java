@@ -89,7 +89,10 @@ public class Seller {
 		this.sellerDispatching = sellerDispatching;
 	}
 
-	public String getSellerIcon() { 
+
+
+	public String getSellerIcon() {
+
 		return sellerIcon;
 	}
 
