@@ -14,8 +14,21 @@ public class BuyerServiceImpl implements BuyerService{
 	
 	@Override
 	public Buyer login(String buyerName,String buyerPassword) {
-		System.out.println("名字："+buyerName+"密码："+buyerPassword);
-		return buyerMapper.login(buyerName,buyerPassword);
+		Buyer buyer=buyerMapper.login(buyerName);
+		if(buyer.getBuyerPassword().equals(buyerPassword)) {
+			return buyer;
+		}
+		return null;
+	}
+
+	@Override
+	public int addBuyer(String buyerName, String buyerPassword) {
+		return buyerMapper.addBuyer(buyerName, buyerPassword);
+	}
+
+	@Override
+	public Buyer selByName(String buyerName) {
+		return buyerMapper.login(buyerName);
 	}
 
 }
